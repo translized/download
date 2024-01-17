@@ -1,0 +1,16 @@
+name: 'Translized download'
+description: 'Download localizable files to the Translized translation management platform.'
+author: 'Translized'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+  
+inputs:
+  config_file: 
+    description: 'The filename of the configuration file. Default: .translized.yml'
+    required: false
+    default: '.translized.yml'
+    
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
